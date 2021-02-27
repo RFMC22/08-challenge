@@ -1,0 +1,145 @@
+:root{
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --darkblue: hsl(249, 10%, 26%); 
+  --grayishblue: hsl(246, 25%, 77%);
+}
+*{
+  font-family: 'Poppins', sans-serif;;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+main{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: var(--red) url(../images/bg-intro-desktop.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container{
+  width: 90%;
+  height: 550px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#left{
+  width: 40%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#left h1{
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+  width: 90%;
+}
+#left p{
+  color: white;
+  width: 90%;
+  font-size: 14px;
+  font-weight: 400;
+}
+#right{
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#right-top{
+  width: 90%;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 1px rgba(128, 128, 128, 0.192);
+  background-color: var(--blue);
+  text-align: center;
+  line-height: 40px;
+}
+#right-top h2{
+  color: white;
+  font-weight: 700;
+}
+#right-top h2 span{
+  color: white;
+  font-weight: 400;
+}
+#right-bottom{
+  width: 90%;
+  background-color: white;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+#right-bottom form{
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.error-input{
+  width: 100%;
+  position: relative;
+}
+img{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+form input{
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--grayishblue);
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 13px;
+}
+.error p{
+  color: var(--red);
+  font-size: 12px;
+  display: none;
+}
+input[type="submit"]{
+  background-color: var(--green);
+  border-radius: 5px;
+  border: 1px solid hsl(154, 53%, 42%);
+  border-bottom: 3px solid hsl(154, 53%, 42%);
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#terms{
+  text-align: center;
+  width: 100%;
+}
+#terms p{
+  color: var(--grayishblue);
+  font-size: 12px;
+}
+#terms span{
+  color: var(--red);
+  font-weight: 700;
+  font-size: 12px;
+}
+/*llamada con js*/
+.errori{
+  border: 1px solid var(--red);
+}

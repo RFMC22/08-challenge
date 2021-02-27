@@ -1,0 +1,11 @@
+form input:focus{
+  border: 1px solid hsl(248, 32%, 49%);
+  font-weight: 600;
+  color: hsl(249, 10%, 26%);
+}
+input[type="submit"]:focus{
+  background-color: hsla(154, 59%, 51%, 0.637);
+  border: 1px solid hsla(154, 59%, 51%, 0.637);
+  border-bottom: 3px solid hsla(154, 59%, 51%, 0.637);
+  color: white;
+}
